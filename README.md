@@ -57,6 +57,8 @@ npm run preview
 
 ## Структура
 
-- `src/App.tsx` — основные экраны и UI-логика
-- `src/lib/telegram.ts` — адаптер для Telegram WebApp API
-- `src/styles.css` — визуальная реализация под макет
+- `src/app/App.tsx` — тонкий composition root приложения
+- `src/features/task-manager/` — экраны, feature-компоненты, данные и хуки task manager
+- `src/shared/lib/telegram.ts` — адаптер для Telegram WebApp API
+- `src/shared/ui/` — переиспользуемый UI-слой
+- `src/shared/styles/` — токены и глобальные layout-стили

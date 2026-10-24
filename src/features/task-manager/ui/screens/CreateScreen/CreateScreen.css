@@ -1,0 +1,71 @@
+.create-screen .title-row img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex: 0 0 24px;
+}
+
+.create-screen .create-copy {
+  position: absolute;
+  left: 0;
+  top: 232px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 375px;
+  height: 304px;
+  padding: 24px 16px;
+}
+
+.create-screen .title-input,
+.create-screen .description-input {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--white);
+  outline: none;
+}
+
+.create-screen .title-input::placeholder,
+.create-screen .description-input::placeholder {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.create-screen .title-input {
+  height: 30px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.create-screen .description-input {
+  height: 20px;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.create-screen .notification-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 343px;
+  padding: 18px 0 12px;
+  border-radius: 16px;
+  background: #2b2f57;
+}
+
+.create-screen .notification-card--create {
+  margin: 4px 16px 0;
+}
+
+.create-screen .notification-card__title {
+  padding: 0 16px 12px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+}

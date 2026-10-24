@@ -1,0 +1,60 @@
+.category-row {
+  position: absolute;
+  left: 16px;
+  top: 180px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 343px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  touch-action: pan-x;
+  scroll-behavior: smooth;
+}
+
+.category-row::-webkit-scrollbar {
+  display: none;
+}
+
+.category-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  flex: 0 0 auto;
+  padding: 10px 24px;
+  overflow: hidden;
+  border-radius: 100px;
+  background: var(--tab-bg);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.category-pill--active {
+  background: var(--accent);
+}
+
+.category-settings-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  background: rgba(219, 154, 113, 0.16);
+  color: var(--warm);
+}
+
+.category-settings-button svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

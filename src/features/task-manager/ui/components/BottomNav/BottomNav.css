@@ -1,0 +1,73 @@
+.bottom-nav {
+  position: absolute;
+  left: 0;
+  top: 704px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 375px;
+  padding: 0 24px;
+}
+
+.nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38px;
+}
+
+.nav-tab svg {
+  width: 28px;
+  height: 28px;
+  color: var(--warm);
+  fill: currentColor;
+  stroke: none;
+}
+
+.nav-tab img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-tab span {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 43px;
+  background: var(--warm);
+}
+
+.fab svg {
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.progress-nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.progress-nav-icon img {
+  width: 20px;
+  height: 18px;
+}

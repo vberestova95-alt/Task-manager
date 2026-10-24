@@ -1,4 +1,6 @@
-import type { Task, TaskCategory } from "./types";
+import { TODAY_ISO } from "@/shared/lib/date";
+
+import type { DraftTask, NotificationSettings, Task, TaskCategory, TabItem } from "./types";
 
 export const categoryLabels: Record<TaskCategory, string> = {
   home: "Домашние дела",
@@ -44,3 +46,22 @@ export const initialTasks: Task[] = [
     status: "done"
   }
 ];
+
+export const initialTabs: TabItem[] = [
+  { id: "home", label: "Домашние дела" },
+  { id: "shopping", label: "Покупки" },
+  { id: "work", label: "Работа" }
+];
+
+export const defaultDraft: DraftTask = {
+  title: "",
+  description: "",
+  category: "home",
+  dueDate: TODAY_ISO
+};
+
+export const initialNotificationSettings: NotificationSettings = {
+  date: TODAY_ISO,
+  time: "",
+  repeat: "Никогда"
+};

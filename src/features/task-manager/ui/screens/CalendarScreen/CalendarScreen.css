@@ -1,0 +1,135 @@
+.calendar-header {
+  position: absolute;
+  left: 16px;
+  top: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 343px;
+}
+
+.calendar-header h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.43px;
+}
+
+.month-arrow {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+.month-arrow svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.small-arrow {
+  stroke-width: 1.8;
+}
+
+.small-arrow--right {
+  transform: rotate(180deg);
+}
+
+.calendar-wrap {
+  position: absolute;
+  left: 0;
+  top: 114px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 375px;
+  align-items: center;
+}
+
+.calendar-wrap--progress {
+  position: static;
+  margin-top: 16px;
+}
+
+.weekday-row,
+.date-row {
+  display: flex;
+  gap: 4px;
+  width: 375px;
+  padding: 0 16px;
+}
+
+.weekday-row {
+  justify-content: center;
+}
+
+.date-row--center {
+  justify-content: center;
+}
+
+.date-row--end {
+  justify-content: flex-end;
+}
+
+.date-row--start {
+  justify-content: flex-start;
+}
+
+.weekday-pill,
+.date-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  flex: 0 0 46px;
+}
+
+.weekday-pill {
+  height: 26px;
+  border-radius: 500px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.date-pill {
+  height: 46px;
+  border-radius: 500px;
+  background: #2b2f57;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.date-pill--active {
+  background: var(--accent);
+}
+
+.shortcut-grid {
+  display: flex;
+  gap: 8px;
+  width: 343px;
+  height: 64px;
+}
+
+.shortcut-grid--calendar {
+  position: static;
+}
+
+.shortcut-card {
+  flex: 1 1 0;
+  height: 64px;
+  border-radius: 16px;
+  background: #2b2f57;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+}

@@ -1,0 +1,103 @@
+.tasks-screen .hero-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 61%, rgba(166, 196, 255, 0.26) 0, rgba(166, 196, 255, 0.14) 22%, rgba(104, 132, 205, 0.06) 42%, transparent 70%),
+    radial-gradient(circle at 50% 100%, rgba(121, 82, 255, 0.34) 0, rgba(121, 82, 255, 0.15) 24%, transparent 48%),
+    radial-gradient(circle at 14% 96%, rgba(120, 92, 255, 0.14) 0, transparent 20%),
+    radial-gradient(circle at 86% 96%, rgba(120, 92, 255, 0.12) 0, transparent 18%);
+  background-size: 100% 100%, 108% 108%, 104% 104%, 104% 104%;
+  background-repeat: no-repeat;
+  animation: heroGlowBlend 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.tasks-screen .title-row svg,
+.tasks-screen .task-checkbox svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tasks-screen .tasks-scroll {
+  position: absolute;
+  inset: 244px 0 112px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 16px 24px;
+  scrollbar-width: none;
+}
+
+.tasks-screen .tasks-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.tasks-screen .task-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 343px;
+}
+
+.tasks-screen .task-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 343px;
+  height: 69px;
+  padding: 10px 24px;
+  border-radius: 16px;
+  background: var(--task-bg);
+}
+
+.tasks-screen .task-item--done {
+  background: var(--task-done-bg);
+}
+
+.tasks-screen .task-checkbox {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--warm);
+  border-radius: 8px;
+  flex: 0 0 auto;
+}
+
+.tasks-screen .task-checkbox--checked {
+  background: var(--warm);
+}
+
+.tasks-screen .task-checkbox svg {
+  position: absolute;
+  inset: 0;
+  color: #fff;
+}
+
+.tasks-screen .task-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  text-align: left;
+}
+
+.tasks-screen .task-label {
+  flex: 0 0 auto;
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+}
+
+.tasks-screen .task-item--done .task-title,
+.tasks-screen .task-item--done .task-label {
+  opacity: 0.6;
+}
+
+.tasks-screen .task-item--done .task-title {
+  text-decoration: line-through;
+}

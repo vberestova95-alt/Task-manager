@@ -1,0 +1,12 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, Roboto, "SF Pro Text", sans-serif;
+  --screen-bg: #222548;
+  --main-bg: #303466;
+  --task-bg: rgba(42, 46, 82, 0.72);
+  --task-done-bg: rgba(42, 46, 82, 0.4);
+  --tab-bg: #2a2e52;
+  --accent: #6a43d4;
+  --warm: #db9a71;
+  --white: #fafafa;
+}

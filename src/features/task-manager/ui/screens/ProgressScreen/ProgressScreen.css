@@ -1,0 +1,88 @@
+.progress-screen .hero-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 61%, rgba(166, 196, 255, 0.26) 0, rgba(166, 196, 255, 0.14) 22%, rgba(104, 132, 205, 0.06) 42%, transparent 70%),
+    radial-gradient(circle at 50% 100%, rgba(121, 82, 255, 0.34) 0, rgba(121, 82, 255, 0.15) 24%, transparent 48%),
+    radial-gradient(circle at 14% 96%, rgba(120, 92, 255, 0.14) 0, transparent 20%),
+    radial-gradient(circle at 86% 96%, rgba(120, 92, 255, 0.12) 0, transparent 18%);
+  background-size: 100% 100%, 108% 108%, 104% 104%, 104% 104%;
+  background-repeat: no-repeat;
+  animation: heroGlowBlend 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.progress-screen .progress-scroll {
+  position: absolute;
+  inset: 116px 0 112px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 0 24px;
+  scrollbar-width: none;
+}
+
+.progress-screen .progress-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.progress-screen .progress-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 168px);
+  gap: 8px;
+  margin: 0 16px;
+}
+
+.progress-screen .progress-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 168px;
+  height: 152px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #2a2e52;
+}
+
+.progress-screen .progress-card__badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 97px;
+  overflow: hidden;
+}
+
+.progress-screen .progress-card__badge img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.progress-screen .progress-card__value {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.progress-screen .progress-card__label {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+
+.progress-screen .progress-calendar {
+  width: 375px;
+  margin-top: 24px;
+}
+
+.progress-screen .calendar-header--progress {
+  position: static;
+  width: 343px;
+  margin: 0 16px;
+}

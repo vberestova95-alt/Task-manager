@@ -1,0 +1,120 @@
+.tabs-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(8, 9, 22, 0.56);
+  backdrop-filter: blur(10px);
+}
+
+.tabs-modal {
+  width: 100%;
+  max-width: 320px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #2a2e52;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.tabs-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tabs-modal__header h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.tabs-modal__header button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.tabs-modal__header svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tabs-modal__list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.tabs-modal__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  cursor: grab;
+}
+
+.tabs-modal__row span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tabs-modal__row--dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+}
+
+.tabs-modal__row button {
+  color: #ffb3b3;
+}
+
+.tabs-modal__row button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.tabs-modal__add {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.tabs-modal__add input {
+  min-width: 0;
+  height: 42px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  outline: none;
+}
+
+.tabs-modal__add input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tabs-modal__add button {
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 14px;
+  background: var(--warm);
+  color: #fff;
+  font-weight: 600;
+}
